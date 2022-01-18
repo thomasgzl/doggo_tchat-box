@@ -1,9 +1,7 @@
 <template>
-<div>
-
-    <h1>{{ msg }}</h1>
-    <button type="button" @click="count++">count is: {{ count }}</button>
-
+  <div>
+    <input v-model="userMessage" type="text" class="send-input" />
+    <button type="button" @click="sendMessage(userMessage)">woof!</button>
   </div>
 </template>
 

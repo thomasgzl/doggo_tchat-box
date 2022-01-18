@@ -1,10 +1,15 @@
 <template>
-<div>
+<div class="font-barlow">
   <Header />
   <marquee>🐕🐕 welcome to the futur of tchating ! 🐕🐕</marquee>
-  <img alt="Vue logo" src="./assets/logo-shiba.png" />
-  <h1>DOGGO_tchat box</h1>
+  
+  <TchatBox />
   <HelloWorld msg="helloworld" />
+
+  <div class="bg-purple text-white sm:bg-green md:bg-blue md:text-yellow lg:bg-red xl:bg-orange">
+  Test
+</div>
+
 </div>
 </template>
 <script lang="ts" src="./App.ts"></script>

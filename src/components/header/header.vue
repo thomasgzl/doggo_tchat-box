@@ -1,6 +1,8 @@
 <template>
-  <div class="header">
-    Header !
+  <div class="flex sticky top-0 h-20 bg-red-600 justify-center border-b-2 border-white mb-5">
+    <div class="logo-container absolute">
+      <img alt="doggo tchat logo" src="@/assets/logo-shiba.png" />
+    </div>
   </div>
 </template>
 

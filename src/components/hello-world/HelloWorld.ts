@@ -1,5 +1,4 @@
 import { defineComponent } from 'vue';
-import { ref } from 'vue'
 
 export default defineComponent({
     name: 'HelloWorld',
@@ -10,11 +9,19 @@ export default defineComponent({
             default: ''
         }
     },
-    data() { return { count: ref(0) }; },
+    data() { 
+        return { 
+            userMessage: ''
+        }; 
+     },
     computed: {},
     watch: {},
-    created: function() {},
+    created: function() { this.userMessage = this.msg },
     mounted: function() {},
     beforeUnmount: function() { /* clean all non-Vue listeners/objects */ },
-    methods: {}
+    methods: {
+        sendMessage(message: string) {
+            console.log('send', message)
+        }
+    }
 })
