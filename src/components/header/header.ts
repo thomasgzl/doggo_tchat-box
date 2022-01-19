@@ -8,5 +8,9 @@ export default defineComponent({
   created: function() { /* possible init API call */ },
   mounted: function() { /* DOM accessible via this.$el */ },
   beforeUnmount: function() { /* clean all non-Vue listeners/objects */ },
-  methods: {}
+  methods: {
+    displayUsers() {
+      this.$store.commit('usersPanel', { display: true });
+    }
+  }
 });

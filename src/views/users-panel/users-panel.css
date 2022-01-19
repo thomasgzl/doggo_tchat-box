@@ -1,0 +1,36 @@
+.users-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  width: 20rem;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.close-btn {
+  width: 3rem;
+  opacity: 90%;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.online {
+  color: rgb(0, 255, 0);
+  opacity: 1;
+}
+
+.anim-side-panel-enter-active,
+.anim-side-panel-leave-active {
+  transform: translateX(0);
+  transition-duration: 500ms;
+  transition-property: opacity, transform;
+  transition-timing-function: ease-out;
+  opacity: 1;
+}
+
+.anim-side-panel-enter,
+.anim-side-panel-leave-to {
+  transform: translateX(50%);
+  opacity: 0;
+}

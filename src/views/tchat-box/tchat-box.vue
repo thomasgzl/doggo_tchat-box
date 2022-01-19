@@ -1,6 +1,11 @@
 <template>
-  <div class="flex mt-5 tchat-box bg-gray-900 mx-5 shadow-lg shadow-gray-900/50">
-  BOX
+  <div class="flex tchat-box bg-stone-800 mr-5 shadow-lg">
+    <div v-for="msg in messages" :key="msg.id">
+      <MessageDisplayer :authorId="msg.author_id" 
+      :message="msg.content" 
+      :date="msg.date" 
+      :channelId="msg.channel_id" />
+  </div>
   </div>
 </template>
 

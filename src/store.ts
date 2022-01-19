@@ -1,19 +1,23 @@
-import { InjectionKey } from 'vue'
-import { createStore, useStore as baseUseStore, Store } from 'vuex'
+import { createStore } from 'vuex'
 
-export interface State {
-  count: number
+export interface IState { 
+  message: string
+  usersPanel: { display: boolean }
 }
 
-export const key: InjectionKey<Store<State>> = Symbol()
-
-export const store = createStore<State>({
-  state: {
-    count: 0
+export const store = createStore({
+  state(): IState {
+    return {
+      message: '',
+      usersPanel: { display: false }
+    }
+  },
+  mutations: {
+    message(state: IState, message) {
+      state.message = message;
+    },
+    usersPanel(state: IState, usersPanel) {
+      state.usersPanel = usersPanel;
+    },
   }
 })
-
-// define your own `useStore` composition function
-export function useStore () {
-  return baseUseStore(key)
-}

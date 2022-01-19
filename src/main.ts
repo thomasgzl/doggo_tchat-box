@@ -1,11 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import { store, key } from './store'
+import { store } from './store'
 
 import '@/index.css'
 
-const app = createApp(App)
-
-app.use(store, key)
+const app = createApp(App).use(store)
 
 app.mount('#app')

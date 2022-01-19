@@ -1,0 +1,17 @@
+.channels-display {
+  height: 40rem;
+  overflow-y: scroll;
+}
+
+.chan {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+}
+
+.chan:hover {
+  background-color: #E83A3B;
+  margin-left: 0;
+  padding-left: 0.5rem;
+  cursor: url("@/assets/pointer.png"), pointer;
+}

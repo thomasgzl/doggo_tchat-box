@@ -1,16 +1,23 @@
 <template>
-<div class="font-barlow">
-  <Header />
-  <marquee>🐕🐕 welcome to the futur of tchating ! 🐕🐕</marquee>
-  
-  <TchatBox />
-  <HelloWorld msg="helloworld" />
+  <div class="font-barlow">
 
-  <div class="bg-purple text-white sm:bg-green md:bg-blue md:text-yellow lg:bg-red xl:bg-orange">
-  Test
-</div>
+    <UsersPanel />
 
-</div>
+    <div class="mb-6">
+      <Header />
+    </div>
+
+    <div>
+      <div class="channels">
+        <ChannelsDisplay />
+      </div>
+      <div class="messages">
+        <TchatBox />
+        <MessageInput />
+      </div>
+    </div>
+
+  </div>
 </template>
 <script lang="ts" src="./App.ts"></script>
 <style lang="css" src="./App.css"></style>

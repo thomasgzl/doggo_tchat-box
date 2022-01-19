@@ -1,3 +1,4 @@
 .tchat-box {
-  height: 25rem;
+  background: center no-repeat url("@/assets/doggo_background.png");
+  height: 37rem;
 }

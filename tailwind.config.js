@@ -7,7 +7,10 @@ module.exports = {
     extend: {
       fontFamily: {
         'barlow': ['"Barlow Semi Condensed"', 'cursive']
-      }
+      },
+      spacing: {
+        '6': '6rem',
+      },
     },
   },
   plugins: [],

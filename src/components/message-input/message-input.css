@@ -1,0 +1,10 @@
+.send-input {
+  color: black;
+  width: 72%;
+  height: 3rem;
+}
+
+.message-input__container {
+  margin-left: 16%;
+  width: 100%;
+}
