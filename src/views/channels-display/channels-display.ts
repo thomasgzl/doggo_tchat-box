@@ -1,6 +1,6 @@
 import { defineComponent } from 'vue';
 import { gql } from 'graphql-request';
-import { graphQLClient } from '../../gql-client';
+import { graphQLClient } from '@/gql-client';
 
 export default defineComponent({
   name: 'ChannelsDisplay',
@@ -26,11 +26,15 @@ export default defineComponent({
       }
     `
     
-    const data = await graphQLClient.request(query)
-    if (data) { 
-      console.log(data)
-      this.channels = data.channel
+      const data = await graphQLClient.request(query)
+      if (data) {
+        this.channels = data.channel
+      }
+    },
+
+    isChannel(chan: string) {
+      this.$store.commit('channelId', chan)
     }
-    }
+
   }
 });

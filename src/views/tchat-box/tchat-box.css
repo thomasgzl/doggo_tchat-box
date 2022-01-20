@@ -1,4 +1,5 @@
 .tchat-box {
   background: center no-repeat url("@/assets/doggo_background.png");
   height: 37rem;
+  overflow-y: scroll;
 }
